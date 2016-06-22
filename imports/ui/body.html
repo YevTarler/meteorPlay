@@ -1,24 +1,20 @@
 <body>
   <div class="container">
     <header>
-<<<<<<< Updated upstream
-      <h1>Todo List</h1>
-=======
       <h1>Todo List ({{incompleteCount}})</h1>
 
-      <label for="" class="hide-completed">
-        <input type="checkbox" name="name" />
+      <label class="hide-completed">
+        <input type="checkbox" />
         Hide Completed Tasks
       </label>
 
       {{> loginButtons}}
 
       {{#if currentUser}}
-        <form action="" class="new-task">
-          <input type="text" name="text" placeholder="Type to add new tasks">
+        <form class="new-task">
+          <input type="text" name="text" placeholder="Type to add new tasks" />
         </form>
       {{/if}}
->>>>>>> Stashed changes
     </header>
 
     <ul>
@@ -28,7 +24,3 @@
     </ul>
   </div>
 </body>
-
-<template name="task">
-  <li> {{ text }}</li>
-</template>
